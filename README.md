@@ -1,6 +1,9 @@
 # File-Transfer-Using-UDP
 Created a network emulator and coded sender and receiver programs to produce an unreliable file transfer network using UDP sockets in python 
 
+Packet discard/loss was considered here as we used UDP sockets instead of TCP sockets. TCP sockets allows reliable file transfer so packet loss 
+is not taken into account in that case. To use the network, follow the steps as ordered.
+
 1) Run the nEmulator by the command `python nEmulator.py 9991 host2 9994 9993 host 3 0.0 1`
 
 2) Run the receiver by the command `python receiver.py host1 9993 9994 <output File>`
